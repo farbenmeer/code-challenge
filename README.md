@@ -36,7 +36,7 @@ Go to http://localhost:3001/graphql and click on "Docs" in the upper right corno
 
 1. There should be an overview page where the user can see all blog posts in short.
 2. If the user clicks on one blog post they should see the full blog post.
-3. The user should be able to send a link to a specific blog post to there friends.
+3. The user should be able to send a link to a specific blog post to their friends.
 
 
 # Think about 💡
