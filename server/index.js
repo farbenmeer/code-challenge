@@ -3,6 +3,7 @@ const { ApolloServer } = require("apollo-server-express");
 const { blogposts } = require("./data");
 const { typeDefs } = require("./typeDefs");
 const { resolvers } = require("./resolvers");
+const cors=require("cors");
 
 const port = 3001;
 
@@ -11,6 +12,7 @@ const server = new ApolloServer({ typeDefs, resolvers });
 const app = express();
 
 server.applyMiddleware({ app });
+app.use(cors())
 
 /* REST API */
 app.get("/rest/blogposts", (_request, res) => {
